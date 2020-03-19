@@ -1,0 +1,852 @@
+﻿{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "date": "Thu, 19 Mar 2020 12:45:21 GMT",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "9879",
+    "connection": "close",
+    "cache-control": "no-cache, must-revalidate",
+    "expires": "Mon, 20 Dec 1998 01:00:00 GMT",
+    "last-modified": "Thu, 19 Mar 2020 12:45:21 GMT",
+    "pragma": "no-cache",
+    "server": "Apache-Coyote/1.1",
+    "set-cookie": [
+      "JSESSIONID=54B990D570E93A5006BEC1864F51005A; Path=/directions/; HttpOnly"
+    ],
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "OPTIONS,GET,POST",
+    "status": "success",
+    "transactionweight": "1"
+  },
+  "config": {
+    "url": "http://www.mapquestapi.com/directions/v2/route?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074, 4.892865&to=52.360110, 4.909659",
+    "method": "get",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "User-Agent": "axios/0.19.2"
+    },
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1
+  },
+  "request": {
+    "_events": {},
+    "_eventsCount": 6,
+    "outputData": [],
+    "outputSize": 0,
+    "writable": true,
+    "_last": true,
+    "chunkedEncoding": false,
+    "shouldKeepAlive": false,
+    "useChunkedEncodingByDefault": false,
+    "sendDate": false,
+    "_removedConnection": false,
+    "_removedContLen": false,
+    "_removedTE": false,
+    "_contentLength": 0,
+    "_hasBody": true,
+    "_trailer": "",
+    "finished": true,
+    "_headerSent": true,
+    "socket": {
+      "connecting": false,
+      "_hadError": false,
+      "_parent": null,
+      "_host": "www.mapquestapi.com",
+      "_readableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "buffer": {
+          "head": null,
+          "tail": null,
+          "length": 0
+        },
+        "length": 0,
+        "pipes": null,
+        "pipesCount": 0,
+        "flowing": true,
+        "ended": false,
+        "endEmitted": false,
+        "reading": true,
+        "sync": false,
+        "needReadable": true,
+        "emittedReadable": false,
+        "readableListening": false,
+        "resumeScheduled": false,
+        "emitClose": false,
+        "autoDestroy": false,
+        "destroyed": false,
+        "defaultEncoding": "utf8",
+        "awaitDrain": 0,
+        "readingMore": false,
+        "decoder": null,
+        "encoding": null
+      },
+      "readable": true,
+      "_events": {
+        "close": [
+          null,
+          null
+        ]
+      },
+      "_eventsCount": 6,
+      "_writableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "finalCalled": true,
+        "needDrain": false,
+        "ending": true,
+        "ended": true,
+        "finished": false,
+        "destroyed": false,
+        "decodeStrings": false,
+        "defaultEncoding": "utf8",
+        "length": 0,
+        "writing": false,
+        "corked": 0,
+        "sync": false,
+        "bufferProcessing": false,
+        "writecb": null,
+        "writelen": 0,
+        "afterWriteTickInfo": null,
+        "bufferedRequest": null,
+        "lastBufferedRequest": null,
+        "pendingcb": 1,
+        "prefinished": false,
+        "errorEmitted": false,
+        "emitClose": false,
+        "autoDestroy": false,
+        "bufferedRequestCount": 0,
+        "corkedRequestsFree": {
+          "next": null,
+          "entry": null
+        }
+      },
+      "writable": false,
+      "allowHalfOpen": false,
+      "_sockname": null,
+      "_pendingData": null,
+      "_pendingEncoding": "",
+      "server": null,
+      "_server": null,
+      "parser": null,
+      "_httpMessage": "~request"
+    },
+    "connection": "~request~socket",
+    "_header": "GET /directions/v2/route?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074,%204.892865&to=52.360110,%204.909659 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.19.2\r\nHost: www.mapquestapi.com\r\nConnection: close\r\n\r\n",
+    "agent": {
+      "_events": {},
+      "_eventsCount": 2,
+      "defaultPort": 80,
+      "protocol": "http:",
+      "options": {
+        "path": null
+      },
+      "requests": {},
+      "sockets": {
+        "www.mapquestapi.com:80:": [
+          "~request~socket"
+        ]
+      },
+      "freeSockets": {},
+      "keepAliveMsecs": 1000,
+      "keepAlive": false,
+      "maxSockets": null,
+      "maxFreeSockets": 256
+    },
+    "method": "GET",
+    "path": "/directions/v2/route?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074,%204.892865&to=52.360110,%204.909659",
+    "_ended": true,
+    "res": {
+      "_readableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "buffer": {
+          "head": null,
+          "tail": null,
+          "length": 0
+        },
+        "length": 0,
+        "pipes": null,
+        "pipesCount": 0,
+        "flowing": true,
+        "ended": true,
+        "endEmitted": true,
+        "reading": false,
+        "sync": false,
+        "needReadable": false,
+        "emittedReadable": false,
+        "readableListening": false,
+        "resumeScheduled": false,
+        "emitClose": true,
+        "autoDestroy": false,
+        "destroyed": false,
+        "defaultEncoding": "utf8",
+        "awaitDrain": 0,
+        "readingMore": false,
+        "decoder": null,
+        "encoding": null
+      },
+      "readable": false,
+      "_events": {
+        "end": [
+          null,
+          null
+        ]
+      },
+      "_eventsCount": 3,
+      "socket": "~request~socket",
+      "connection": "~request~socket",
+      "httpVersionMajor": 1,
+      "httpVersionMinor": 1,
+      "httpVersion": "1.1",
+      "complete": true,
+      "headers": "~headers",
+      "rawHeaders": [
+        "Date",
+        "Thu, 19 Mar 2020 12:45:21 GMT",
+        "Content-Type",
+        "application/json;charset=UTF-8",
+        "Content-Length",
+        "9879",
+        "Connection",
+        "close",
+        "Cache-Control",
+        "no-cache, must-revalidate",
+        "Expires",
+        "Mon, 20 Dec 1998 01:00:00 GMT",
+        "Last-Modified",
+        "Thu, 19 Mar 2020 12:45:21 GMT",
+        "Pragma",
+        "no-cache",
+        "Server",
+        "Apache-Coyote/1.1",
+        "Set-Cookie",
+        "JSESSIONID=54B990D570E93A5006BEC1864F51005A; Path=/directions/; HttpOnly",
+        "Access-Control-Allow-Origin",
+        "*",
+        "Access-Control-Allow-Methods",
+        "OPTIONS,GET,POST",
+        "status",
+        "success",
+        "transactionWeight",
+        "1"
+      ],
+      "trailers": {},
+      "rawTrailers": [],
+      "aborted": false,
+      "upgrade": false,
+      "url": "",
+      "method": null,
+      "statusCode": 200,
+      "statusMessage": "OK",
+      "client": "~request~socket",
+      "_consuming": true,
+      "_dumped": false,
+      "req": "~request",
+      "responseUrl": "http://www.mapquestapi.com/directions/v2/route?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074,%204.892865&to=52.360110,%204.909659",
+      "redirects": []
+    },
+    "aborted": false,
+    "timeoutCb": null,
+    "upgradeOrConnect": false,
+    "parser": null,
+    "maxHeadersCount": null,
+    "reusedSocket": false,
+    "_redirectable": {
+      "_writableState": {
+        "objectMode": false,
+        "highWaterMark": 16384,
+        "finalCalled": false,
+        "needDrain": false,
+        "ending": false,
+        "ended": false,
+        "finished": false,
+        "destroyed": false,
+        "decodeStrings": true,
+        "defaultEncoding": "utf8",
+        "length": 0,
+        "writing": false,
+        "corked": 0,
+        "sync": true,
+        "bufferProcessing": false,
+        "writecb": null,
+        "writelen": 0,
+        "afterWriteTickInfo": null,
+        "bufferedRequest": null,
+        "lastBufferedRequest": null,
+        "pendingcb": 0,
+        "prefinished": false,
+        "errorEmitted": false,
+        "emitClose": true,
+        "autoDestroy": false,
+        "bufferedRequestCount": 0,
+        "corkedRequestsFree": {
+          "next": null,
+          "entry": null
+        }
+      },
+      "writable": true,
+      "_events": {},
+      "_eventsCount": 2,
+      "_options": {
+        "protocol": "http:",
+        "maxRedirects": 21,
+        "maxBodyLength": 10485760,
+        "path": "/directions/v2/route?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074,%204.892865&to=52.360110,%204.909659",
+        "method": "GET",
+        "headers": "~config~headers",
+        "agents": {},
+        "hostname": "www.mapquestapi.com",
+        "port": null,
+        "nativeProtocols": {
+          "http:": {
+            "METHODS": [
+              "ACL",
+              "BIND",
+              "CHECKOUT",
+              "CONNECT",
+              "COPY",
+              "DELETE",
+              "GET",
+              "HEAD",
+              "LINK",
+              "LOCK",
+              "M-SEARCH",
+              "MERGE",
+              "MKACTIVITY",
+              "MKCALENDAR",
+              "MKCOL",
+              "MOVE",
+              "NOTIFY",
+              "OPTIONS",
+              "PATCH",
+              "POST",
+              "PROPFIND",
+              "PROPPATCH",
+              "PURGE",
+              "PUT",
+              "REBIND",
+              "REPORT",
+              "SEARCH",
+              "SOURCE",
+              "SUBSCRIBE",
+              "TRACE",
+              "UNBIND",
+              "UNLINK",
+              "UNLOCK",
+              "UNSUBSCRIBE"
+            ],
+            "STATUS_CODES": {
+              "100": "Continue",
+              "101": "Switching Protocols",
+              "102": "Processing",
+              "103": "Early Hints",
+              "200": "OK",
+              "201": "Created",
+              "202": "Accepted",
+              "203": "Non-Authoritative Information",
+              "204": "No Content",
+              "205": "Reset Content",
+              "206": "Partial Content",
+              "207": "Multi-Status",
+              "208": "Already Reported",
+              "226": "IM Used",
+              "300": "Multiple Choices",
+              "301": "Moved Permanently",
+              "302": "Found",
+              "303": "See Other",
+              "304": "Not Modified",
+              "305": "Use Proxy",
+              "307": "Temporary Redirect",
+              "308": "Permanent Redirect",
+              "400": "Bad Request",
+              "401": "Unauthorized",
+              "402": "Payment Required",
+              "403": "Forbidden",
+              "404": "Not Found",
+              "405": "Method Not Allowed",
+              "406": "Not Acceptable",
+              "407": "Proxy Authentication Required",
+              "408": "Request Timeout",
+              "409": "Conflict",
+              "410": "Gone",
+              "411": "Length Required",
+              "412": "Precondition Failed",
+              "413": "Payload Too Large",
+              "414": "URI Too Long",
+              "415": "Unsupported Media Type",
+              "416": "Range Not Satisfiable",
+              "417": "Expectation Failed",
+              "418": "I'm a Teapot",
+              "421": "Misdirected Request",
+              "422": "Unprocessable Entity",
+              "423": "Locked",
+              "424": "Failed Dependency",
+              "425": "Unordered Collection",
+              "426": "Upgrade Required",
+              "428": "Precondition Required",
+              "429": "Too Many Requests",
+              "431": "Request Header Fields Too Large",
+              "451": "Unavailable For Legal Reasons",
+              "500": "Internal Server Error",
+              "501": "Not Implemented",
+              "502": "Bad Gateway",
+              "503": "Service Unavailable",
+              "504": "Gateway Timeout",
+              "505": "HTTP Version Not Supported",
+              "506": "Variant Also Negotiates",
+              "507": "Insufficient Storage",
+              "508": "Loop Detected",
+              "509": "Bandwidth Limit Exceeded",
+              "510": "Not Extended",
+              "511": "Network Authentication Required"
+            },
+            "maxHeaderSize": 8192,
+            "globalAgent": "~request~agent"
+          },
+          "https:": {
+            "globalAgent": {
+              "_events": {},
+              "_eventsCount": 2,
+              "defaultPort": 443,
+              "protocol": "https:",
+              "options": {
+                "path": null
+              },
+              "requests": {},
+              "sockets": {},
+              "freeSockets": {},
+              "keepAliveMsecs": 1000,
+              "keepAlive": false,
+              "maxSockets": null,
+              "maxFreeSockets": 256,
+              "maxCachedSessions": 100,
+              "_sessionCache": {
+                "map": {},
+                "list": []
+              }
+            }
+          }
+        },
+        "pathname": "/directions/v2/route",
+        "search": "?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074,%204.892865&to=52.360110,%204.909659"
+      },
+      "_redirectCount": 0,
+      "_redirects": "~request~res~redirects",
+      "_requestBodyLength": 0,
+      "_requestBodyBuffers": [],
+      "_currentRequest": "~request",
+      "_currentUrl": "http://www.mapquestapi.com/directions/v2/route?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074,%204.892865&to=52.360110,%204.909659"
+    }
+  },
+  "data": {
+    "route": {
+      "hasTollRoad": false,
+      "hasBridge": false,
+      "boundingBox": {
+        "lr": {
+          "lng": 4.909658,
+          "lat": 52.350479
+        },
+        "ul": {
+          "lng": 4.891247,
+          "lat": 52.360233
+        }
+      },
+      "distance": 1.514,
+      "hasTimedRestriction": false,
+      "hasTunnel": true,
+      "hasHighway": false,
+      "computedWaypoints": [],
+      "routeError": {
+        "errorCode": -400,
+        "message": ""
+      },
+      "formattedTime": "00:04:35",
+      "sessionId": "5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+      "hasAccessRestriction": false,
+      "realTime": -1,
+      "hasSeasonalClosure": false,
+      "hasCountryCross": false,
+      "fuelUsed": 0.11,
+      "legs": [
+        {
+          "hasTollRoad": false,
+          "hasBridge": false,
+          "destNarrative": "",
+          "distance": 1.514,
+          "hasTimedRestriction": false,
+          "hasTunnel": true,
+          "hasHighway": false,
+          "index": 0,
+          "formattedTime": "00:04:35",
+          "origIndex": 5,
+          "hasAccessRestriction": false,
+          "hasSeasonalClosure": false,
+          "hasCountryCross": false,
+          "roadGradeStrategy": [
+            []
+          ],
+          "destIndex": -1,
+          "time": 275,
+          "hasUnpaved": false,
+          "origNarrative": "Go north on Ferdinand Bolstraat.",
+          "maneuvers": [
+            {
+              "distance": 0.076,
+              "streets": [
+                "Karel du Jardinstraat"
+              ],
+              "narrative": "Start out going east on Karel du Jardinstraat toward Van der Helstplein.",
+              "turnType": 0,
+              "startPoint": {
+                "lng": 4.893047,
+                "lat": 52.351032
+              },
+              "index": 0,
+              "formattedTime": "00:00:11",
+              "directionName": "East",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.35103225708008,4.893046855926514|marker-1||52.351318359375,4.894742012023926|marker-2||¢er=52.35117530822754,4.89389443397522&defaultMarker=none&zoom=14&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 11,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+              "direction": 8
+            },
+            {
+              "distance": 0.059,
+              "streets": [
+                "Tweede van der Helststraat"
+              ],
+              "narrative": "Turn right onto Tweede van der Helststraat.",
+              "turnType": 2,
+              "startPoint": {
+                "lng": 4.894742,
+                "lat": 52.351318
+              },
+              "index": 1,
+              "formattedTime": "00:00:15",
+              "directionName": "South",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.351318359375,4.894742012023926|marker-2||52.35047912597656,4.894559860229492|marker-3||¢er=52.35089874267578,4.894650936126709&defaultMarker=none&zoom=14&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 15,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+              "direction": 4
+            },
+            {
+              "distance": 0.123,
+              "streets": [
+                "Lutmastraat"
+              ],
+              "narrative": "Turn right onto Lutmastraat.",
+              "turnType": 2,
+              "startPoint": {
+                "lng": 4.89456,
+                "lat": 52.350479
+              },
+              "index": 2,
+              "formattedTime": "00:00:34",
+              "directionName": "West",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.35047912597656,4.894559860229492|marker-3||52.350624084472656,4.891648769378662|marker-4||¢er=52.35055160522461,4.893104314804077&defaultMarker=none&zoom=13&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 34,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+              "direction": 7
+            },
+            {
+              "distance": 0.004,
+              "streets": [
+                "Ferdinand Bolstraat"
+              ],
+              "narrative": "Turn right onto Ferdinand Bolstraat.",
+              "turnType": 2,
+              "startPoint": {
+                "lng": 4.891649,
+                "lat": 52.350624
+              },
+              "index": 3,
+              "formattedTime": "00:00:01",
+              "directionName": "Northwest",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.350624084472656,4.891648769378662|marker-4||52.350669860839844,4.891601085662842|marker-5||¢er=52.35064697265625,4.891624927520752&defaultMarker=none&zoom=15&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 1,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+              "direction": 2
+            },
+            {
+              "distance": 0.03,
+              "streets": [
+                "Cornelis Troostplein"
+              ],
+              "narrative": "Ferdinand Bolstraat becomes Cornelis Troostplein.",
+              "turnType": 0,
+              "startPoint": {
+                "lng": 4.891601,
+                "lat": 52.35067
+              },
+              "index": 4,
+              "formattedTime": "00:00:06",
+              "directionName": "North",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.350669860839844,4.891601085662842|marker-5||52.35109329223633,4.891480922698975|marker-6||¢er=52.350881576538086,4.891541004180908&defaultMarker=none&zoom=15&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 6,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+              "direction": 1
+            },
+            {
+              "distance": 0.115,
+              "streets": [
+                "Ferdinand Bolstraat"
+              ],
+              "narrative": "Stay straight to go onto Ferdinand Bolstraat.",
+              "turnType": 0,
+              "startPoint": {
+                "lng": 4.891481,
+                "lat": 52.351093
+              },
+              "index": 5,
+              "formattedTime": "00:00:22",
+              "directionName": "North",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.35109329223633,4.891480922698975|marker-6||52.35274124145508,4.891246795654297|marker-7||¢er=52.3519172668457,4.891363859176636&defaultMarker=none&zoom=12&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 22,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+              "direction": 1
+            },
+            {
+              "distance": 0.631,
+              "streets": [
+                "Ceintuurbaan"
+              ],
+              "narrative": "Turn right onto Ceintuurbaan.",
+              "turnType": 2,
+              "startPoint": {
+                "lng": 4.891247,
+                "lat": 52.352741
+              },
+              "index": 6,
+              "formattedTime": "00:01:52",
+              "directionName": "East",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.35274124145508,4.891246795654297|marker-7||52.355926513671875,4.905141830444336|marker-8||¢er=52.35433387756348,4.898194313049316&defaultMarker=none&zoom=11&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 112,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+              "direction": 8
+            },
+            {
+              "distance": 0.201,
+              "streets": [
+                "S110",
+                "Amsteldijk"
+              ],
+              "narrative": "Turn left onto S110/Amsteldijk.",
+              "turnType": 6,
+              "startPoint": {
+                "lng": 4.905142,
+                "lat": 52.355927
+              },
+              "index": 7,
+              "formattedTime": "00:00:37",
+              "directionName": "North",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.355926513671875,4.905141830444336|marker-8||52.35871124267578,4.903793811798096|marker-9||¢er=52.35731887817383,4.904467821121216&defaultMarker=none&zoom=12&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 37,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+              "direction": 1
+            },
+            {
+              "distance": 0.275,
+              "streets": [
+                "S100"
+              ],
+              "narrative": "Turn right onto S100/Stadhouderskade. Continue to follow S100.",
+              "turnType": 2,
+              "startPoint": {
+                "lng": 4.903794,
+                "lat": 52.358711
+              },
+              "index": 8,
+              "formattedTime": "00:00:37",
+              "directionName": "East",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&size=225,160&locations=52.35871124267578,4.903793811798096|marker-9||52.360233306884766,4.909658432006836|marker-10||¢er=52.35947227478027,4.906726121902466&defaultMarker=none&zoom=12&rand=-595288539&session=5e736961-01ff-4ee4-02b4-22f8-0a32ae38eb63",
+              "transportMode": "AUTO",
+              "attributes": 2048,
+              "time": 37,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+              "direction": 8
+            },
+            {
+              "distance": 0,
+              "streets": [],
+              "narrative": "MAURITSKADE.",
+              "turnType": -1,
+              "startPoint": {
+                "lng": 4.909658,
+                "lat": 52.360233
+              },
+              "index": 9,
+              "formattedTime": "00:00:00",
+              "directionName": "",
+              "maneuverNotes": [],
+              "linkIds": [],
+              "signs": [],
+              "transportMode": "AUTO",
+              "attributes": 0,
+              "time": 0,
+              "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+              "direction": 0
+            }
+          ],
+          "hasFerry": false
+        }
+      ],
+      "options": {
+        "arteryWeights": [],
+        "cyclingRoadFactor": 1,
+        "timeType": 0,
+        "useTraffic": false,
+        "returnLinkDirections": false,
+        "countryBoundaryDisplay": true,
+        "enhancedNarrative": false,
+        "locale": "en_US",
+        "tryAvoidLinkIds": [],
+        "drivingStyle": 2,
+        "doReverseGeocode": true,
+        "generalize": -1,
+        "mustAvoidLinkIds": [],
+        "sideOfStreetDisplay": true,
+        "routeType": "FASTEST",
+        "avoidTimedConditions": false,
+        "routeNumber": 0,
+        "shapeFormat": "raw",
+        "maxWalkingDistance": -1,
+        "destinationManeuverDisplay": true,
+        "transferPenalty": -1,
+        "narrativeType": "text",
+        "walkingSpeed": -1,
+        "urbanAvoidFactor": -1,
+        "stateBoundaryDisplay": true,
+        "unit": "M",
+        "highwayEfficiency": 22,
+        "maxLinkId": 0,
+        "maneuverPenalty": -1,
+        "avoidTripIds": [],
+        "filterZoneFactor": -1,
+        "manmaps": "true"
+      },
+      "locations": [
+        {
+          "dragPoint": false,
+          "displayLatLng": {
+            "lng": 4.892865,
+            "lat": 52.351074
+          },
+          "adminArea4": "",
+          "adminArea5": "Amsterdam",
+          "postalCode": "1072SC",
+          "adminArea1": "NL",
+          "adminArea3": "North Holland",
+          "type": "s",
+          "sideOfStreet": "N",
+          "geocodeQualityCode": "P1AAA",
+          "adminArea4Type": "County",
+          "linkId": 98921289,
+          "street": "Karel du Jardinstraat",
+          "adminArea5Type": "City",
+          "geocodeQuality": "POINT",
+          "adminArea1Type": "Country",
+          "adminArea3Type": "State",
+          "latLng": {
+            "lng": 4.892865,
+            "lat": 52.351074
+          }
+        },
+        {
+          "dragPoint": false,
+          "displayLatLng": {
+            "lng": 4.909659,
+            "lat": 52.36011
+          },
+          "adminArea4": "",
+          "adminArea5": "Amsterdam",
+          "postalCode": "1091AA",
+          "adminArea1": "NL",
+          "adminArea3": "North Holland",
+          "type": "s",
+          "sideOfStreet": "N",
+          "geocodeQualityCode": "B1AAA",
+          "adminArea4Type": "County",
+          "linkId": 5103317,
+          "street": "Mauritskade",
+          "adminArea5Type": "City",
+          "geocodeQuality": "STREET",
+          "adminArea1Type": "Country",
+          "adminArea3Type": "State",
+          "latLng": {
+            "lng": 4.909659,
+            "lat": 52.36011
+          }
+        }
+      ],
+      "time": 275,
+      "hasUnpaved": false,
+      "locationSequence": [
+        0,
+        1
+      ],
+      "hasFerry": false
+    },
+    "info": {
+      "statuscode": 0,
+      "copyright": {
+        "imageAltText": "© 2020 MapQuest, Inc.",
+        "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+        "text": "© 2020 MapQuest, Inc."
+      },
+      "messages": []
+    }
+  }
+}

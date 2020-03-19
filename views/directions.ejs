@@ -1,0 +1,15 @@
+<%- include ("./partials/head.ejs") %>
+<h1>You're going from <%= directions.startLocation.locationString %> to the Device Lab</h1>
+<p>Good luck with the journey, see directions below!</p>
+<section>
+    <% directions.maneuvers.forEach(maneuver => { %>
+        <article>
+            <h1>Step: <%= maneuver.step + 1 %></h1>
+            <p>After <%= (maneuver.distance * 1000) %> meter <%= maneuver.narrative %> </p>
+        </article>
+    <% }); %>
+</section>
+<a href="/">
+    <button><span>NEW ROUTE</span></button>
+</a>
+<%- include ("./partials/footer.ejs") %>

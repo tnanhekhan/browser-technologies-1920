@@ -1,0 +1,31 @@
+{
+  "name": "browser-technologies-1920",
+  "version": "1.0.0",
+  "description": "Travel directions from anywhere to the Device Lab",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "circular-json": "^0.5.9",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnanhekhan/browser-technologies-1920.git"
+  },
+  "author": "tnanhekhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tnanhekhan/browser-technologies-1920/issues"
+  },
+  "homepage": "https://github.com/tnanhekhan/browser-technologies-1920#readme"
+}
