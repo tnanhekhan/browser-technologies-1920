@@ -1,3 +1,4 @@
+const http = require('http');
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -6,22 +7,20 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const directionsRouter = require('./routes/directions');
-const port = 3000;
+const port = process.env.PORT || 3001;
 
 let app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
-app.use('/directions', directionsRouter);
+app.set('views', path.join(__dirname, 'views'))
+    .set('view engine', 'ejs')
+    .use(logger('dev'))
+    .use(express.json())
+    .use(express.urlencoded({extended: false}))
+    .use(cookieParser())
+    .use(express.static(path.join(__dirname, 'public')))
+    .use('/', indexRouter)
+    .use('/directions', directionsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -39,6 +38,8 @@ app.use(function (err, req, res, next) {
     res.render('error', {title: "404"});
 });
 
-app.listen(port, () => console.log(` Server running on http://localhost:${port}`));
+http.createServer(app).listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`)
+});
 
 module.exports = app;

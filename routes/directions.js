@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const createError = require('http-errors');
 const express = require('express');
 const axios = require("axios");
@@ -14,7 +16,7 @@ router.get('/', function (req, res, next) {
         next(createError(404))
     } else {
         // Api call!
-        // axios.get("http://www.mapquestapi.com/directions/v2/route?key=X7L5jRAsKfJ9EUbBBkSlhHNI6CiFGp7Z&from=52.351074, 4.892865&to=52.360110, 4.909659")
+        // axios.get(`http://www.mapquestapi.com/directions/v2/route?key=${process.env.API_KEY}&from=52.351074, 4.892865&to=52.360110, 4.909659`)
         //     .then(result => {
         //         let json = CircularJSON.stringify(result);
         //         res.send(json);

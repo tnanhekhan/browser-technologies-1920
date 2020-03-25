@@ -7,7 +7,7 @@ Een van de mooiste principes van het web is dat het er echt is voor iedereen. Ie
 ## Use Case
 Ik wil de routebeschrijving van mijn huis tot aan het Device Lab stap voor stap kunnen zien.
 
-![wireflow](./public/img/wireflow.png "wireflow")
+![wireflow](docs/wireflow.png "wireflow")
 
 ## Installation
 Clone this repo with your favourite GIT CLI or GUI.  
