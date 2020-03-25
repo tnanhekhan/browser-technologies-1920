@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - 12.16
+- 12.16
 script: true
 deploy:
   provider: heroku
   api_key:
-    secure: g5nKw62SxTD2I8qqRRTKnZdKTR5UYhYhSkBQMonVg/FZQ8AOgPRrDtpuHusuOMaJOtmqW+r6CbnspRjI8h3KPyyqXbvLolB9aBhhd0ltqbpKalmqLgocJLD/i/RODKm+yDXsWxtY6GcM+FPQtwPja9TY/goVtCXADe3x5I2ecLI/GpqSI5V+28/iiQ2XNs1l6p8RYpVTFtQsZrkv8SIIkx+3kQC96cUFgczZPVsJEtPK5f3MofE8ovt1KSFePnK1qAlITBaIsOO7VU3R4pr9FWeP9WPvREK5qUh58fZG6TjIWpBcIwjQNi7oBKpGsVkPGjK4HM7cZj66Hg8l39wc4yRjFscvSN5zDPhb0CWXWINZRe5mIZv2uD3wPSpnXLgoEG//oYY3U3lSymmKz40mY2yhfVbLfQT/ytC056wFCWvTOWy16Ftn1tDy4bogfMUIZnUFleLFVNkKWpuB5F0dqkBBiA92o0cIUx4Nqpd2YZiu8FpFakP9fHBpZqchYDJqa7mqf7QeUvZpJ30pKM+qI0Q+hTUH/i7jFGMxSTh2qYTGB4im8QVjbmiJeXhXPc8hvCE7nRXqMra5X+g59c8rVfGmbSzM70vY8wBh+ZQ/K4PqCHfCF2BFvieNaSetJ9ytvPLBYU/eWOAeg2wWBzFPhAoMGyMPq2ttnF5aCyZvmKU=
+    secure: r3VZCvXjOFbRndZ9gWx/Dq0x8Kr43uLvZxISUpiey1+P2/0i82A3fF9mQ9ZqRPqeIGBTOtCtTAK8NEFHHSooiT/ZyMGXmRqwwyVu32i5W9ozFeNMW/ZbVkG+Q39sBBuAcHGYFvnMf5pYZgvS9s41EwvRcwe2TvPDf+lWINkjnOLer2TfUaa4yv0GQoToiXIL/yDOea52Yqb0o1faVdUDffBXQBv3Q5qfzBWsY1ur1ltNtZ+S1NO0uNJcEcx5+8I5o/3YN8m0CFA5ml9Pg+HD1PSm2G1ma1Bp4X/B6uHeR9Vd+f6wSrKeGKVTsC2YV6J6SSXPjHo1g61wxf8o9u4/tqWa0Yd1zas6rMcYttl4AM14KuZT1DjVOW+DGcMmJ8mivDofekakY00zwio3EaMbqk3fylxklWbptCM+mTVOcQy5+hKJLdmbQn7qn0i1LHvM7rosHkSqzfQ+zI8++Il6++WUKcld4Zk7cJU49wuIlINbEoDSO4nxaqLxO8FvFrK/U+UJbfUXz/6Ag2pkfrthIV4iw8ylojRxY5W4uyAtrU5Xkyw52CfPS1+PvyFJvluxwN8kXSQy7ejvNZ9KgfC8ftbbB+jv8WRW2fW2V6V0cB4+YF1SQPbkxwzll7DrRuQT2prBQ43FQD1tSs5k5xv4g16weSoP7l/i7pun4NoBfb0=
   app: road-to-device-lab
   on:
     repo: tnanhekhan/browser-technologies-1920
     branch: staging
 branches:
   only:
-    - staging
+  - staging
