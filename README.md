@@ -16,6 +16,9 @@ Run ` npm install ` to install this project and its necessary dependencies.
 Run `npm dev` and go to `localhost:3000` to see the dev version running with nodemon.  
 Run `npm start` and go to `localhost:3000` to see the dev version running.
 
+## Live Version
+Here is a link to the live version running on Heroku: https://road-to-device-lab.herokuapp.com/
+
 ## Feedback week 2
 Feedback over:
 - Wireflow / Use case
