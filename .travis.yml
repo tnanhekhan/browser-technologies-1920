@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 12.16
+script: true
+deploy:
+  provider: heroku
+  api_key:
+    secure: otbbvsuyR7zR1Iaron/rBqB6+eZDuElsGbTrbUrjjNabCf5Ll5PjZrY1RXU3kYLNI5T8RiKNapD7+j9BXpYWhihUBBkTLOCToxOLm4KFrwSchGc7frfHuMggfd10/T3R+fv0oHWmQN3a5h8f/ULBhmYMfI3I8Qc78XcBd7tTwNvWuZE56SGwK5/nF3C61LepGU9L4rY7vHLwowVQx9E0dq9YB7AvH8nxrdk3sKa/V/Dh5TEC8hVbJziPkTpsWCYxWaO/qJ2uJco6TaSHBsQhyDkS+tkRNwc0tK9jOdBTlpKrKN3GJRDPx48KQUkNzM0AOVfP3FdezzP7ZBAQt3PzCVdj0pDbVAeFhSzYB8wFGetQO3z8p8EzjakJv9iWjcHBsxi4smrDiBV6PRRFTNeArnvkdVhIvzTXXjEErSOF7NnrAWN6oYGjt4BkVAP/sYlo/ghw+U2NRA2YW+sUH0vezxspmlRPAz5U73K6rEm2zr0n1G1DAYbkLohCLl+o80bK5TeIxu6NUO48uv3vGxwaAcUmANh+MXMbUgimi899O2qVj0W40Xw3A/fHz3wFSYIJbAP2fZLD/B1QvtIuWoToOubH6RVFffvf2lRV+V4KBOC1Dgy9gNwoMVPTxTbagqBNG2wt38h3bf8A/fWf4uyrncVMstsxiEodZNhEs9w+Ap4=
+  app: road-to-device-lab
+  on:
+    repo: tnanhekhan/browser-technologies-1920
+    branch: staging
+branches:
+  only:
+    - staging
