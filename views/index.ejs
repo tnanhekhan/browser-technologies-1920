@@ -1,9 +1,10 @@
 <%- include ("./partials/head.ejs") %>
 <h1><%= title %></h1>
 <p>Welcome to <%= title %></p>
-<form action="directions" method="get">
+<form id="location-form" action="directions" method="post">
     <label for="location">Location:</label>
-    <input type="text" id="location" name="location" placeholder="Enter your current location:"><br><br>
-    <button type="submit"><span>GO</span></button>
+    <input type="text" name="location" placeholder="Enter your location you want to travel from:" required pattern="\S(.*\S)?"><br><br>
 </form>
+
+<button class="index-button" type="submit" form="location-form"><span>GO</span></button>
 <%- include ("./partials/footer.ejs") %>

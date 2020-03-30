@@ -4,15 +4,15 @@ const createError = require('http-errors');
 const express = require('express');
 const axios = require("axios");
 const CircularJSON = require('circular-json');
+const api = require("../data/api");
 const result = require("./result.json");
-
 
 const router = express.Router();
 
-/* GET directions listing. */
-router.get('/', function (req, res, next) {
+/* POST directions listing. */
+router.post('/', function (req, res, next) {
     // Only show directions with filled in location
-    if (req.query.location == null || req.query.location.length === 0) {
+    if (req.body.location == null || req.body.location.length === 0) {
         next(createError(404))
     } else {
         // Api call!
@@ -48,20 +48,28 @@ router.get('/', function (req, res, next) {
                 direction: maneuver.directionName,
                 streets: maneuver.streets,
                 time: maneuver.time,
-                icon: maneuver.iconUrl
+                icon: maneuver.iconUrl,
+                lat: maneuver.startPoint.lat,
+                lng: maneuver.startPoint.lng
             }
         });
 
-        let directions = {
-            distance: data.distance,
-            totalTime: data.formattedTime,
-            fuelUsed: data.fuelUsed,
-            startLocation: locations[0],
-            endLocation: locations[1],
-            maneuvers: maneuvers
-        };
+        let maps = maneuvers.map(maneuver => {
+            return api.getMaps(maneuver.lat, maneuver.lng);
+        });
 
-        res.render("directions", {location: req.query.location, title: "Directions", directions: directions});
+        Promise.all(maps).then(maps => {
+            let directions = {
+                distance: data.distance,
+                totalTime: data.formattedTime,
+                fuelUsed: data.fuelUsed,
+                startLocation: locations[0],
+                endLocation: locations[1],
+                maneuvers: maneuvers,
+                maps: maps.map(map => `data:${map.headers["content-type"]};base64,${Buffer.from(map.data).toString("base64")}`)
+            };
+            res.render("directions", {location: req.query.location, title: "Directions", directions: directions});
+        });
     }
 });
 
