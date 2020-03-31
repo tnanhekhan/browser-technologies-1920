@@ -23,6 +23,10 @@ Here is a link to the live version running on Heroku: https://road-to-device-lab
 Feedback over:
 - Wireflow / Use case
 
+## Browser Tech research:
+CSS SCROLL SNAP: https://drafts.csswg.org/css-scroll-snap/
+https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
+
 
 
 

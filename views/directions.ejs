@@ -1,15 +1,26 @@
 <%- include ("./partials/head.ejs") %>
-<h1>You're going from <%= directions.startLocation.locationString %> to the Device Lab</h1>
-<p>Good luck with the journey, see directions below!</p>
-<section>
-    <% directions.maneuvers.forEach(maneuver => { %>
-        <article>
-            <h1>Step: <%= maneuver.step + 1 %></h1>
-            <p>After <%= (maneuver.distance * 1000) %> meter <%= maneuver.narrative %> </p>
+<h3>You're going from <%= directions.startLocation.locationString %> to the Device Lab</h3>
+<p id="directions-message">Good luck with the journey, see directions below!</p>
+<section id="direction-container">
+    <% directions.maneuvers.forEach((maneuver, index) => { %>
+        <article id="step-<%= maneuver.step + 1 %>" tabindex="0">
+            <h1><%= maneuver.step + 1 %>.</h1>
+            <% if (maneuver.distance === 0) { %>
+                <h3>You are at your destination: <%= maneuver.narrative %> </h3>
+            <% }else{ %>
+                <h3>After <%= (maneuver.distance * 1000) %> m: </h3>
+                <h4> <%= maneuver.narrative %> </h4>
+            <% } %>
+            <img src="<%= directions.maps[index] %>" alt="Map of step <%= maneuver.step + 1 %>"/>
         </article>
     <% }); %>
 </section>
-<a href="/">
-    <button><span>NEW ROUTE</span></button>
-</a>
+<div class="stepper">
+    <% directions.maneuvers.forEach((maneuver) => { %>
+        <div class="step"><%= maneuver.step + 1 %></div>
+    <% }); %>
+</div>
+<form id="directions-home-form" action="/" method="GET"></form>
+<button type="submit" form="directions-home-form" class="home-button"><span>NEW ROUTE</span></button>
+<script type="text/javascript" src="/js/script-directions.js"></script>
 <%- include ("./partials/footer.ejs") %>
