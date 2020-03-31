@@ -169,6 +169,22 @@ section > article {
 }
 ```
 
+Feature detection has also been implemented for the GeoLocation implementation. The GeoLocation button only appears if GeoLocation is supported. If GeoLocation is not supported the button does not appear.
+
+```javascript
+if (navigator.geolocation) {
+    locationForm.insertAdjacentHTML("afterend", "<h2> OR </h2>\n <button class=\"location-button\">GET LOCATION FROM DEVICE</button>\n");
+    document.addEventListener("click", event => {
+        if (event.target && event.target.className === "location-button") {
+            navigator.geolocation.getCurrentPosition(position => {
+                locationInput.value = `${position.coords.latitude}, ${position.coords.longitude}`;
+                locationInput.focus();
+            });
+        }
+    })
+}
+```
+
 ### Browser Test
 #### Chrome 80
 Everything works like it is supposed to because this is the browser that was used while developing.
