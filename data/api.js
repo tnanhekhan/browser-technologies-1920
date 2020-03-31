@@ -15,10 +15,9 @@ async function getDirections(query) {
 async function getMaps(lat, lng) {
     let baseUrl = "https://maps.locationiq.com/v2/staticmap?key=";
     let authorization = process.env.MAPS_ACCESS_TOKEN;
-    let params = `&center=${lat},${lng}&zoom=17&size=1000x500&markers=${lat},${lng}|icon:small-red-cutout&format=jpg`;
+    let params = `&center=${lat},${lng}&zoom=18&size=640x640&markers=${lat},${lng}|icon:small-red-cutout&format=jpg`;
     try {
         return await axios.get(baseUrl + authorization + params, {responseType: 'arraybuffer'});
-        // return await axios.get("https://via.placeholder.com/500x500", {responseType: 'arraybuffer'});
     } catch (error) {
         console.log(`Something went wrong: ${error}`);
     }
