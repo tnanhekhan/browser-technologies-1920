@@ -3,7 +3,6 @@ const elementBeforeToggleButton = document.getElementById("directions-message");
 const steps = document.getElementsByClassName("step");
 const stepper = document.getElementsByClassName("stepper")[0];
 
-
 directionContainer.style.display = window.getComputedStyle(directionContainer).display;
 
 if (directionContainer.style.display === "flex") {
