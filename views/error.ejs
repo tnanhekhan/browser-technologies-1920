@@ -1,6 +1,6 @@
 <%- include ("./partials/head.ejs") %>
-<h1>404</h1>
-<h2>You took a wrong turn! Page not found!</h2>
+<h1><%= title %></h1>
+<h2><%= message %></h2>
 <form id="directions-home-form" action="/" method="GET"></form>
 <button type="submit" form="directions-home-form" class="index-button"><span>NEW ROUTE</span></button>
 <%- include ("./partials/footer.ejs") %>

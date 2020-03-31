@@ -7,10 +7,10 @@ document.addEventListener("click", event => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(position => {
                 locationInput.value = `${position.coords.latitude}, ${position.coords.longitude}`;
-                console.log(position)
+                locationInput.focus();
             });
         } else {
-            alert("Geolocation is not supported by this browser.");
+            alert("Geolocation is not supported by this browser. Please fill in your location manually.");
         }
     }
 });

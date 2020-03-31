@@ -27,6 +27,10 @@ app.use(function (req, res, next) {
     next(createError(404));
 });
 
+app.use(function (req, res, next) {
+    next(createError(402));
+});
+
 // error handler
 app.use(function (err, req, res, next) {
     // set locals, only providing error in development
@@ -35,7 +39,14 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('404', {title: "404"});
+
+    let errorMessage;
+    if (err.status === 404) {
+        errorMessage = "You took a wrong turn! Page not found!"
+    } else if (err.status === 402) {
+        errorMessage = "We didn't find any directions. Please try again."
+    }
+    res.render('error', {title: err.status, message: errorMessage});
 });
 
 http.createServer(app).listen(port, () => {
