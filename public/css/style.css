@@ -60,7 +60,7 @@ article:hover, article:focus {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-article:focus, button:focus {
+article:focus, button:active {
     -webkit-box-shadow: 0 10px 20px #2ecc71, 0 6px 6px rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0 10px 20px #2ecc71, 0 6px 6px rgba(0, 0, 0, 0.23);
     -ms-box-shadow: 0 10px 20px #2ecc71, 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -71,10 +71,9 @@ article:focus, button:focus {
 
 button {
     margin-top: calc(16px + 5vh);
-
     width: 70vw;
     padding: 24px;
-
+    font-weight: bold;
     overflow: hidden;
     border-width: 0;
     outline: none;
@@ -85,7 +84,7 @@ button {
     transition: background-color .3s;
 }
 
-button:hover, button:focus {
+button:hover:focus:active {
     background-color: #27ae60;
 }
 
@@ -100,7 +99,9 @@ section {
     /* make it smooth on iOS */
     -webkit-overflow-scrolling: touch;
 
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-points-y: repeat(300px);
 }
 
 section > article {
@@ -121,6 +122,10 @@ pre {
     width: 80vw;
 }
 
+article * {
+    pointer-events: none;
+}
+
 article > img {
     max-width: 100%;
 }
@@ -135,19 +140,38 @@ article > img {
     transform: translateX(-50%);
 }
 
-.view-button {
+.view-button, .location-button {
     width: auto;
-    height: 64px;
-    top: 16px;
-    left: 0px;
-    right: calc(90% + 8px);
+    height: 32px;
     margin-top: 0;
-    border-radius: 50%;
+    padding: 8px;
+    display: block;
 }
 
-.home-button{
+.home-button {
     margin: calc(16px + 5vh) auto 0;
-    display:block;
+    display: block;
+}
+
+.stepper {
+    margin-top: 32px;
+    text-align: center;
+    display: none;
+}
+
+.step{
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 @media only screen
@@ -156,8 +180,6 @@ and (orientation: portrait) {
     section {
         /* line steps up horizontally */
         display: flex;
-        scroll-snap-type: x mandatory;
-        scroll-snap-points-x: repeat(300px);
     }
 
     section > article {
